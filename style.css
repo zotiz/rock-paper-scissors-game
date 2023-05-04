@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Cinzel', serif;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+  text-align: center;
+  padding:0 25px 25px;
+  box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
+  border-radius:5px;
+}
+header h1 span{
+  font-size:50px;
+  font-weight: large;
+  color:#D14D72;
+  text-shadow: 0 2px 1px #79a06d, 
+      -1px 3px 1px #82ad75, 
+      -2px 5px 1px #8ebf80;
+}
+header h1 {
+  text-shadow: 0 1px 1px rgb(149, 239, 255), 
+      -1px 2px 1px #e5f0e2, 
+      -2px 3px 1px rgb(149, 239, 255);
+}
+main{
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  height: auto;
+  
+  height: 400px;
+  display: flex;
+  border:0.5px solid rgb(181, 178, 178);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+   box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset; 
+  /* box-shadow: -15px -15px 15px rgba(255,255,255,0.2), 15px 15px 15px rgba(0,0,0,0.1), inset -5px -5px 5px rgba(255,255,255,0.2), inset 5px 5px 5px rgba(0,0,0,0.1); */
+}
+main .message{
+   font-size:22px;
+}
+footer{
+  width: 100%;
+  margin:20px auto;
+  height: 136px;
+  /* display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:25px;  */
+ 
+}
+/* footer button img{
+  width: 100%;
+  background-color: rgb(149, 239, 255);
+ 
+} */
+button{
+  height: 100%;
+  width: 140px;
+  color:white;
+  border-radius: 8px;
+  background-color: rgb(149, 239, 255);
+  border:none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.rockBtn{
+  background-image: url('image/rock.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+  
+  font-size: 1px;
+}
+.paperBtn{
+  background-image: url('image/paper.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 1px;
+  margin:0 40px;
+}
+.scissorsBtn{
+  background-image: url('image/scissors.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 1px;
+}
+
+.subMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.leftMainDiv{
+ 
+  width: 80px;
+  height: 80px;
+}
+.rightMainDiv{
+ 
+  width: 80px;
+  height: 80px;
+}
+.sc{
+  margin:0 40px;
+ 
+}
+a{
+  text-decoration: none;
+  opacity: 0.7;
+  font-size:15px;
+  margin:8px;
+}
+a:hover{
+  opacity: 1;
+}
+i{
+  font-size: 20px;
+}
+.fa-brands{animation: spin 2s linear infinite;}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 100%;
+    padding: 20px;
+  }
+  header h1{
+    font-size:26px;
+  }
+  header h1 span{
+    font-size: 30px;
+  }
+  main{
+    width: 98%;
+    height: 300px;
+   
+  }
+  .leftMainDiv{
+ 
+    width: 50px;
+    height: 50px;
+  }
+  .rightMainDiv{
+   
+    width: 50px;
+    height: 50px;
+  }
+ .subMain p{
+  font-size:8px;
+  font-weight: 700;
+ }
+ footer{
+  display: flex;
+  height: 100px;}
+  .sc{
+    margin:0 15px;
+   
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container{
+    width: 100%;
+    padding: 20px;
+  }
+  header h1{
+    font-size:18px;
+  }
+  header h1 span{
+    font-size: 24px;
+  }
+  main{
+    width: 90%;
+    height: 250px;
+   
+  }
+  .leftMainDiv{
+ 
+    width: 30px;
+    height: 30px;
+  }
+  .rightMainDiv{
+   
+    width: 30px;
+    height: 30px;
+  }
+ 
+ footer{
+  display: flex;
+  width: 90%;
+  height: 80px;}
+  .sc{
+    margin:0 8px;
+   
+  }
+  .paperBtn{
+    margin: 0 15px;
+  }
+  
+}
